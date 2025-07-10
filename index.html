@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Untitled.Mp3</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1 class="heading">Untitled.mp3</h1>
+    <div class="music-player">
+      <div class="cover">
+        <img id="cover-image" src="imgs/download.jpeg" alt="Album Cover" />
+      </div>
+
+      <div class="song-info">
+        <h2 id="song-title">Song Title</h2>
+        <p id="song-artist">Artist Name</p>
+      </div>
+
+      <div class="progress-container" id="progress-container">
+        <div class="progress" id="progress"></div>
+      </div>
+
+      <div class="time-info">
+        <span id="current-time">0:00</span>
+        <span id="duration">0:00</span>
+      </div>
+
+      <div class="controls">
+        <button id="shuffle-btn" title="Shuffle">
+          <i>Shuffle</i>
+        </button>
+        <button id="prev-btn" title="Previous">
+          <i>⏮</i>
+        </button>
+        <button id="play-btn" class="play-btn" title="Play">
+          <i>▶</i>
+        </button>
+        <button id="next-btn" title="Next">
+          <i>⏭</i>
+        </button>
+      </div>
+    </div>
+
+    <audio id="audio"></audio>
+    <script src="index.js" charset="utf-8"></script>
+  </body>
+</html>
