@@ -35,6 +35,15 @@ const nextBtn = document.getElementById("next-btn");
 const shuffleBtn = document.getElementById("shuffle-btn");
 const playlistEl = document.getElementById("playlist");
 
+const volumeSlider = document.getElementById("volume-slider");
+
+// Set default volume
+audio.volume = 1;
+
+// Change audio volume when slider is used
+volumeSlider.addEventListener("input", () => {
+  audio.volume = volumeSlider.value;
+});
 // Current song index
 let currentSongIndex = 0;
 let isShuffle = false;

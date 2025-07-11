@@ -8,6 +8,9 @@
   </head>
   <body>
     <h1 class="heading">Untitled.mp3</h1>
+    <div class="volume-container" id="volume-container">
+      <div class="volume" id="volume"></div>
+    </div>
     <div class="music-player">
       <div class="cover">
         <img id="cover-image" src="imgs/download.jpeg" alt="Album Cover" />
@@ -40,6 +43,16 @@
         <button id="next-btn" title="Next">
           <i>⏭</i>
         </button>
+        <div class="volume-container">
+          <input
+            type="range"
+            id="volume-slider"
+            min="0"
+            max="1"
+            step="0.01"
+            value="1"
+          />
+        </div>
       </div>
     </div>
 
